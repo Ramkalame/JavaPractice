@@ -64,14 +64,15 @@ public class Main {
 		
 		try {
 			
-			throw new UserDefineException("this is coustom exception class");
+//			throw new UserDefineException("this is coustom exception class");
+			int data = 100/0;
 			
-		} catch (UserDefineException e) {
-			// TODO: handle exception
-			
-			
-			System.out.println(e);
-			System.out.println(e.getMessage());
+		} 
+		catch(Exception e) {
+//			System.out.println(e);
+			e.getStackTrace();
+//			e.printStackTrace();
+//			e.fillInStackTrace();
 		}
 	}
 		
