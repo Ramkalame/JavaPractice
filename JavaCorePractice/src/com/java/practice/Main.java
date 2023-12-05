@@ -67,6 +67,7 @@ public class Main {
 //			throw new UserDefineException("this is coustom exception class");
 			int data = 100/0;
 			
+<<<<<<< HEAD
 		}
 		catch(ArithmeticException e) {
 			System.out.println(e);
@@ -81,6 +82,15 @@ public class Main {
 			e.fillInStackTrace();
 		}
 		
+=======
+		} 
+		catch(Exception e) {
+//			System.out.println(e);
+			e.getStackTrace();
+//			e.printStackTrace();
+//			e.fillInStackTrace();
+		}
+>>>>>>> 01a84476faa0bb455f6a82e75db1aaad576a608d
 	}
 		
 
