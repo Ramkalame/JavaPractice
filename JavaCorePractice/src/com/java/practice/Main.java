@@ -4,6 +4,7 @@ import java.lang.reflect.Method;
 import java.util.*;
 
 import com.java.practice.model.CheckedException;
+import com.java.practice.model.UserDefineException;
 
 public class Main {
 	
@@ -38,23 +39,40 @@ public class Main {
 //	}
 	
 	
+//	public static void main(String[] args) {
+//		
+////		newMainClass(15);
+//		
+//		try {
+//			
+//			CheckedException obj = new CheckedException();
+//			
+//			obj.method();
+//			
+//		} catch (FileNotFoundException e) {
+//			// TODO: handle exception
+//			
+////			System.out.println(e);
+//			e.printStackTrace();
+//		}
+//		System.out.println("rest of the code");
+//	}
+	
+	
+	
 	public static void main(String[] args) {
-		
-//		newMainClass(15);
 		
 		try {
 			
-			CheckedException obj = new CheckedException();
+			throw new UserDefineException("this is coustom exception class");
 			
-			obj.method();
-			
-		} catch (FileNotFoundException e) {
+		} catch (UserDefineException e) {
 			// TODO: handle exception
 			
-//			System.out.println(e);
-			e.printStackTrace();
+			
+			System.out.println(e);
+			System.out.println(e.getMessage());
 		}
-		System.out.println("rest of the code");
 	}
 		
 
