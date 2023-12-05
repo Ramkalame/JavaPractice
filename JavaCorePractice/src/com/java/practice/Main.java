@@ -1,5 +1,9 @@
 package com.java.practice;
+import java.io.FileNotFoundException;
+import java.lang.reflect.Method;
 import java.util.*;
+
+import com.java.practice.model.CheckedException;
 
 public class Main {
 	
@@ -18,26 +22,39 @@ public class Main {
 //	}
 		
 	
-	public static void newMainClass(int age) {
-		
-		if(age<18) {
-			
-			throw new ArithmeticException("Person is not eligible to vote");
-			
-		}
-		else {
-			System.out.println("person is eligible to vote !");
-		}
-		
-		
-		
-	}
+//	public static void newMainClass(int age) {
+//		
+//		if(age<18) {
+//			
+//			throw new ArithmeticException("Person is not eligible to vote");
+//			
+//		}
+//		else {
+//			System.out.println("person is eligible to vote !");
+//		}
+//		
+//		
+//		
+//	}
 	
 	
 	public static void main(String[] args) {
 		
-		newMainClass(15);
-		System.out.println("rest of tthe code");
+//		newMainClass(15);
+		
+		try {
+			
+			CheckedException obj = new CheckedException();
+			
+			obj.method();
+			
+		} catch (FileNotFoundException e) {
+			// TODO: handle exception
+			
+//			System.out.println(e);
+			e.printStackTrace();
+		}
+		System.out.println("rest of the code");
 	}
 		
 
