@@ -1,10 +1,10 @@
 package com.java.practice;
 import java.io.FileNotFoundException;
+
 import java.lang.reflect.Method;
 import java.util.*;
 
-import com.java.practice.model.CheckedException;
-import com.java.practice.model.UserDefineException;
+
 
 public class Main {
 	
@@ -63,6 +63,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		try {
+			
 			
 //			throw new UserDefineException("this is coustom exception class");
 			int data = 100/0;
