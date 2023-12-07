@@ -39,6 +39,7 @@ public class customExceptionTest1 {
 			validate(88);
 		}catch(invalidAgeException e) {
 			
+			
 			System.out.println(e);
 		}
 		
